@@ -1,0 +1,13 @@
+<div class="planets">
+  <div class="planets__btn" (click)="getPlanetsList(prevPlanets)">Prev</div>
+  <div class="planets__items">
+    <div class="planet" *ngFor="let planet of planets" [routerLink]="[(planet.url.split('/')[5]),planet.name]">
+      <h2>{{planet.name}}</h2>
+      <p>Gravity: {{planet.gravity}}</p>
+      <p>Climate: {{planet.climate}}</p>
+      <p>Terrain: {{planet.terrain}}</p>
+      <p>Population: {{planet.population}}</p>
+    </div>
+  </div>
+  <div class="planets__btn" (click)="getPlanetsList(nextPlanets)">Next</div>
+</div>

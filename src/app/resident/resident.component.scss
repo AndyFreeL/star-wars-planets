@@ -1,0 +1,47 @@
+.resident {
+  display: none;
+  margin: 5px;
+  border: 2px solid white;
+  width: 200px;
+  height: 390px;
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4px;
+    border:1px solid white;
+  }
+
+  // .resident__properties
+  &__properties {
+    margin: 4px;
+    border:1px solid white;
+  }
+}
+.info-resident {
+  // .info-resident__img
+  &__img {
+    margin-top: 10px;
+    width: 120px;
+    height: 120px;
+    border:1px solid white;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  // .info-resident__name
+  &__name {
+    color:orange;
+  }
+}
+.properties-resident {
+  // .properties-resident__element
+  &__element {
+    padding: 4px;
+  }
+}
+.visible{
+  display: block;
+}

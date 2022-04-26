@@ -1,0 +1,28 @@
+<div class="planet">
+  <div class="planet__info">
+    <div class="planet__info-name info-name">
+      <div class="info-name__img"><img src="/assets/img/planet.png" alt=""></div>
+      <h3 class="info-name__planet-name">{{planetInfo.name}}</h3>
+    </div>
+    <div class="planet__info-properties info-properties">
+      <div class="info-properties__element">Climate period: {{planetInfo.climate}}</div>
+      <div class="info-properties__element">Diameter: {{planetInfo.diameter}}</div>
+      <div class="info-properties__element">Gravity period: {{planetInfo.gravity}}</div>
+      <div class="info-properties__element">Orbital period: {{planetInfo.orbital_period}}</div>
+      <div class="info-properties__element">Population period: {{planetInfo.population}}</div>
+      <div class="info-properties__element">Rotation period: {{planetInfo.rotation_period}}</div>
+      <div class="info-properties__element">Surface water: {{planetInfo.surface_water}}</div>
+      <div class="info-properties__element">Terrain period: {{planetInfo.terrain}}</div>
+    </div>
+  </div>
+  <div class="planet__residents residents-planet">
+    <h3 class="residents-planet__title">Residents</h3>
+    <div class="residents-planet__filter filter-btn" >
+      <div class="filter-btn" *ngFor="let item of filterList" (click)="setFilter(item)" [class.active]="item == activeItem">{{item}}</div>
+    </div>
+    <div class="residents-planet__items items-planet">
+      <app-resident class="items-planet__item" [genderFilter]="gender" *ngFor="let resident of residentsList" [residentId]="resident">
+      </app-resident>
+    </div>
+  </div>
+</div>

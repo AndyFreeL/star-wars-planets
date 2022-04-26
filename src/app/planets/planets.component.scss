@@ -1,0 +1,32 @@
+.planets {
+  display: flex;
+  // .planets__previous
+  &__btn {
+    width: 50px;
+    margin: 5px;
+    color: orange;
+    border: 3px solid rgb(181, 180, 180);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  // .planets__item
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.planet {
+  cursor: pointer;
+  width: 250px;
+  height: 300px;
+  margin: 5px;
+  border: 3px solid rgb(181, 180, 180);
+  h2{
+    color: orange;
+    text-align: center;
+  }
+}

@@ -1,0 +1,83 @@
+.planet {
+  display: flex;
+  flex-direction: row;
+
+  // .planet__info
+  &__info {
+    display: flex;
+  flex-direction: column;
+  border:3px solid white;
+  margin:3px;
+  padding: 10px;
+  }
+
+  // .planet__info-name
+  &__info-name {
+    border:2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // .planet__info-properties
+  &__info-properties {
+    margin-top: 5px;
+    padding: 5px;
+    border:2px solid white;
+  }
+}
+
+.residents-planet {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border:3px solid white;
+  margin:3px;
+  padding: 10px;
+  align-items: center;
+
+  // .residents-planet__title
+  &__title {
+    color:orange;
+  }
+  &__filter{
+    display: flex;
+  }
+  &__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border:2px solid white;
+    margin: 5px;
+  }
+}
+.info-name {
+  // .info-name__img
+  &__img {
+    margin-top: 10px;
+    border:1px solid white;
+    width: 200px;
+    height: 200px;
+  }
+
+  // .info-name__planet-name
+  &__planet-name {
+    color:orange;
+  }
+}
+.info-properties__element {
+  padding: 5px;
+}
+.filter-btn{
+  margin: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  &:first-letter{
+    text-transform: uppercase;
+  }
+}
+.active{
+  color: orange;
+}

@@ -1,0 +1,15 @@
+<div class="resident {{residentInfo.gender}}" [ngClass]="{'visible':setHidden(residentInfo.gender)}">
+  <div class="resident__info info-resident">
+    <div class="info-resident__img"><img src="/assets/img/photo.jpg" alt="photo"></div>
+    <h4 class="info-resident__name">{{residentInfo.name}}</h4>
+  </div>
+  <div class="resident__properties properties-resident">
+    <div class="properties-resident__element">Birth year: {{residentInfo.birth_year}}</div>
+    <div class="properties-resident__element">Height: {{residentInfo.height}}</div>
+    <div class="properties-resident__element">Mass: {{residentInfo.mass}}</div>
+    <div class="properties-resident__element">Hair color: {{residentInfo.hair_color}}</div>
+    <div class="properties-resident__element">Skin color: {{residentInfo.skin_color}}</div>
+    <div class="properties-resident__element">Eye color: {{residentInfo.eye_color}}</div>
+    <div class="properties-resident__element">Gender: {{residentInfo.gender}}</div>
+  </div>
+</div>
